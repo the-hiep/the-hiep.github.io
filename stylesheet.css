@@ -140,3 +140,30 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+
+/* Vị trí & thu nhỏ widget */
+.globe-wrap{
+  position: fixed;      /* thoát khỏi layout nên không bị canh giữa */
+  right: 12px;
+  bottom: 12px;
+  z-index: 9999;
+  transform: scale(0.55);        /* chỉnh kích thước tại đây */
+  transform-origin: bottom right; /* thu nhỏ từ góc phải-dưới */
+  line-height: 0;        /* tránh khoảng trắng dư */
+}
+
+/* Ghi đè kiểu inline mà ClustrMaps tự chèn ra */
+#clustrmaps-widget,
+[id^="clustrmaps-widget"],
+#clstr_globe + div{
+  position: static !important;    /* để wrapper điều khiển vị trí */
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  top: auto !important;
+}
+
+@media (max-width: 768px){
+  .globe-wrap{ transform: scale(0.45); right: 8px; bottom: 8px; }
+}
