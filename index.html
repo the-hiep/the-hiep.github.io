@@ -23,7 +23,7 @@
                   The-Hiep Nguyen
                 </p>
                 <p>
-                  I am a Research Member at ATTechLab, advised by <a href="https://scholar.google.com/citations?user=xV7uHJgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+                  I am a Research Member at AITechLab, advised by <a href="https://scholar.google.com/citations?user=xV7uHJgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
     Dr. Duc Dung Nguyen </a>, working on 3D Computer Vision and Generative Models. I received my B.E. in Computer Science from Ho Chi Minh City University of Technology (HCMUT), Vietnam.
                 </p>
                 <p style="text-align:center">
@@ -36,7 +36,7 @@
                 </p>
               </td>
               <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/NguyenTheHiep.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/JonBarron.jpg" class="hoverZoomLink"></a>
+                <a href="images/NguyenTheHiep.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/NguyenTheHiep.jpg" class="hoverZoomLink"></a>
               </td>
             </tr>
           </tbody></table>
@@ -54,7 +54,48 @@ visual domains. I am also fascinated by generative models and their applications
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='uldepth_image'><video  width=100% muted autoplay loop>
+          <source src="images/ULDepth.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/ULDepth.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('uldepth_image').style.opacity = "1";
+          }
 
+          function bog_stop() {
+            document.getElementById('uldepth_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/abstract/document/11122640">
+          <span class="papertitle">ULDepth: Transform Self-supervised Depth Estimation to Unpaired Multi-domain Learning
+</span>
+        </a>
+        <br>
+        <a>Phan Thi Huyen Thanh*</a>, 
+        <a>Trung Thai Tran*</a>,
+				<strong>The-Hiep Nguyen</strong>,
+        <a>Minh Huy Vu Nguyen</a>, 
+        <a>Tran Vu Pham</a>, 
+        <a>Truong Vinh Truong Duy</a>, 
+        <a>Duc Dung Nguyen</a>
+        <br>
+        <em>IEEE Open Journal of Signal Processing</em>, 2025
+        <br>
+        <p></p>
+        <p>
+          Propose a plug-in framework for unpaired multi-domain learning, enhancing self-supervised depth estimation with adversarial domain situations and dynamic normalization across diverse weather and lighting conditions.
+        </p>
+      </td>
+    </tr>
 
 
      
