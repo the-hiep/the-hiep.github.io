@@ -54,6 +54,8 @@ visual domains. I am also fascinated by generative models and their applications
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+
             <tr onmouseout="bog_stop()" onmouseover="bog_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -82,7 +84,7 @@ visual domains. I am also fascinated by generative models and their applications
         <br>
         <a>Phan Thi Huyen Thanh*</a>, 
         <a>Trung Thai Tran*</a>,
-				<strong>The-Hiep Nguyen</strong>,
+				<strong>The Hiep Nguyen</strong>,
         <a>Minh Huy Vu Nguyen</a>, 
         <a>Tran Vu Pham</a>, 
         <a>Truong Vinh Truong Duy</a>, 
@@ -99,15 +101,185 @@ visual domains. I am also fascinated by generative models and their applications
 
 
      
-      
-            
+         
+            <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='depthsegnet24_image'><video  width=100% muted autoplay loop>
+          <source src="images/DepthSegNet24.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/DepthSegNet24.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('depthsegnet24_image').style.opacity = "1";
+          }
+
+          function bog_stop() {
+            document.getElementById('depthsegnet24_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://openaccess.thecvf.com/content/ACCV2024/papers/Thanh_DepthSegNet24_A_Label-Free_Model_for_Robust_Day-Night_Depth_and_Semantics_ACCV_2024_paper.pdf">
+          <span class="papertitle">DepthSegNet24: A Label-Free Model for Robust Day-Night Depth and Semantics
+</span>
+        </a>
+        <br>
+        <a>Phan Thi Huyen Thanh*</a>, 
+				<strong>The Hiep Nguyen*</strong>,
+        <a>Minh Huy Vu Nguyen</a>, 
+        <a>Trung Thai Tran</a>,
+        <a>Tran Vu Pham</a>, 
+        <a>Duc Dung Nguyen</a>,
+        <a>Truong Vinh Truong Duy</a>, 
+        <a>Natori Naotake</a>
+        <br>
+        <em>ACCV</em>, 2024
+        <br>
+        <p></p>
+        <p>
+          Introduce a label-free day–night model that unifies self-supervised depth estimation and knowledge distillation of semantic segmentation to achieve consistent all-day perception.
+        </p>
+      </td>
+    </tr>
+
+            <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='mldse_image'><video  width=100% muted autoplay loop>
+          <source src="images/MLDSE.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/MLDSE.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('mldse_image').style.opacity = "1";
+          }
+
+          function bog_stop() {
+            document.getElementById('mldse_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/document/10471769/">
+          <span class="papertitle">MLDSE: Multi-task Learning for Depth and Segmentation Estimation
+</span>
+        </a>
+        <br>
+        <a>Nhat Huy Tran Hoang</a>, 
+				<strong>The Hiep Nguyen</strong>,
+        <a>Minh Huy Vu Nguyen</a>, 
+        <a>Trung Thai Tran</a>,
+        <a>Xuan Huy Le</a>, 
+        <a>Duc Dung Nguyen</a>
+        <br>
+        <em>RIVF</em>, 2023
+        <br>
+        <p></p>
+        <p>
+          Utilize cross-task feature propagation and multi-scale supervision through a single encoder–decoder framework to optimize depth and segmentation tasks.
+        </p>
+      </td>
+    </tr>
+
+
+
+                <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='monovini_image'><video  width=100% muted autoplay loop>
+          <source src="images/MonoVINI.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/MonoVINI.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('monovini_image').style.opacity = "1";
+          }
+
+          function bog_stop() {
+            document.getElementById('monovini_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://ieeexplore.ieee.org/document/10471862">
+          <span class="papertitle">MonoVINI: Seeing in the Dark with Virtual-World Supervision
+</span>
+        </a>
+        <br>
+        <a>Minh Huy Vu Nguyen</a>, 
+        <a>Trung Thai Tran</a>,
+				<strong>The Hiep Nguyen</strong>,
+        <a>Duc Dung Nguyen</a>
+        <br>
+        <em>RIVF</em>, 2023
+        <br>
+        <p></p>
+        <p>
+          Introduce virtual-world supervision, combining realistic simulation data with adversarial domain adaptation to tackle the challenges of nighttime condition.
+        </p>
+      </td>
+    </tr>
+    
+
+                <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='darkmde_image'><video  width=100% muted autoplay loop>
+          <source src="images/DarkMDE.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/DarkMDE.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('darkmde_image').style.opacity = "1";
+          }
+
+          function bog_stop() {
+            document.getElementById('darkmde_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-46573-4_39">
+          <span class="papertitle">DarkMDE: Excavating Synthetic Images for Nighttime Depth Estimation Using Cross-Domain Supervision
+</span>
+        </a>
+        <br>
+        <a>Trung Thai Tran</a>,
+        <a>Xuan Huy Le</a>, 
+        <a>Minh Huy Vu Nguyen</a>, 
+				<strong>The Hiep Nguyen</strong>,
+        <a>Nhat Huy Tran Hoang</a>, 
+        <a>Duc Dung Nguyen</a>
+        <br>
+        <em>ICIT</em>, 2023
+        <br>
+        <p></p>
+        <p>
+          Popose a GAN-based framework that uses paired synthetic night and real day images to enforce depth consistency and improve robustness in nighttime scenes.
+        </p>
+      </td>
+    </tr>
+
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
+                  This template is borrowed from <a href="https://github.com/jonbarron/jonbarron_website">jonbarron_website</a>.
                 </p>
               </td>
             </tr>
