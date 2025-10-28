@@ -1,290 +1,210 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The‑Hiep Nguyen</title>
+  <meta name="description" content="The‑Hiep Nguyen — 3D Computer Vision, 3D Reconstruction, Depth Estimation, Multi‑Task Learning." />
+  <meta name="author" content="The‑Hiep Nguyen" />
+  <link rel="icon" href="images/favicon/favicon.ico" />
+  <meta property="og:title" content="The‑Hiep Nguyen — Research" />
+  <meta property="og:description" content="3D Computer Vision and Generative Models" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/NguyenTheHiep.jpg" />
+  <style>
+    :root{
+      --bg: #0b0c0f;          /* dark background */
+      --card: #12151b;       /* card surface */
+      --muted: #9aa4b2;      /* secondary text */
+      --text: #e6ecf2;       /* main text */
+      --brand: #7cc3ff;      /* accent */
+      --brand-2: #b289ff;    /* second accent */
+      --ring: rgba(124,195,255,.25);
+      --shadow: 0 10px 30px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.03) inset;
+      --radius: 18px;
+      --radius-sm: 12px;
+      --maxw: 1024px;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7f9fc; --card:#ffffff; --muted:#5b6470; --text:#0b1220; --ring: rgba(40,120,255,.16);
+        --shadow: 0 10px 30px rgba(20,40,80,.08), 0 1px 0 rgba(0,0,0,.04) inset;
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(124,195,255,.08), transparent 60%), radial-gradient(900px 500px at 90% 5%, rgba(178,137,255,.08), transparent 60%), var(--bg);
+      color:var(--text); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{opacity:.9; text-decoration:underline}
+    .container{max-width:var(--maxw); margin:0 auto; padding:32px 20px 80px}
 
-    <title>The-Hiep Nguyen</title>
+    /* Header */
+    .header{display:grid; grid-template-columns: 1.15fr .85fr; gap:28px; align-items:center}
+    @media (max-width: 820px){.header{grid-template-columns:1fr;}}
+    .name{font-size: clamp(28px, 3.5vw, 44px); font-weight:800; letter-spacing:.2px; margin:0 0 6px}
+    .subtitle{margin:4px 0 16px; color:var(--muted)}
+    .lead{margin:0; font-size:1.02rem}
 
-    <meta name="author" content="The-Hiep Nguyen">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
+    .avatar{position:relative; width:100%; max-width:320px; justify-self:end}
+    @media (max-width:820px){.avatar{justify-self:start; max-width:240px}}
+    .avatar img{width:100%; border-radius:50%; display:block; box-shadow: var(--shadow)}
+    .ring{position:absolute; inset:-10px; border-radius:50%; border: 2px solid transparent; background: conic-gradient(from 180deg, var(--brand), var(--brand-2), var(--brand)) border-box; -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#0000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity:.55; filter:blur(.2px)}
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  The-Hiep Nguyen
-                </p>
-                <p>
-                  I am a Research Member at <a href='https://ml4uhcmut.github.io/'>AITechLab</a>, advised by <a href="https://scholar.google.com/citations?user=xV7uHJgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-    Dr. Duc Dung Nguyen </a>, working on 3D Computer Vision and Generative Models. I received my B.E. in Computer Science from Ho Chi Minh City University of Technology (HCMUT), Vietnam.
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:hiepnguyena11387@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp; -->
-                  <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp; -->
-                  <a href="https://scholar.google.com/citations?user=ck0Ho1MAAAAJ&hl=vi">Scholar</a> &nbsp;/&nbsp;
-                  <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp; -->
-                  <a href="https://github.com/hiepngth/">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/NguyenTheHiep.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/NguyenTheHiep.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  My research focuses on computer vision, particularly 3D computer vision, 3D reconstruction, monocular depth estimation, and multi-task learning. Additionally, I delve into domain adaptation techniques to bridge the gap across diverse
-visual domains. I am also fascinated by generative models and their applications in visual content synthesis.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    /* Quick links */
+    .links{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px}
+    .chip{display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:999px; background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(124,195,255,.18); box-shadow: var(--shadow)}
+    .chip svg{width:18px; height:18px; opacity:.9}
 
+    /* Section */
+    .section{margin-top:42px}
+    .section h2{font-size:1.4rem; margin:0 0 6px}
+    .section p{margin:0; color:var(--muted)}
 
+    /* Publications grid */
+    .pubs{margin-top:18px; display:grid; grid-template-columns: 1fr; gap:16px}
+    @media (min-width:720px){.pubs{grid-template-columns: 1fr;}}
+    .card{display:grid; grid-template-columns: 220px 1fr; gap:16px; padding:14px; background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); box-shadow: var(--shadow)}
+    @media (max-width:720px){.card{grid-template-columns: 1fr}}
 
-            <tr onmouseout="bog_stop()" onmouseover="bog_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='uldepth_image'><video  width=100% muted autoplay loop>
-          <source src="images/ULDepth.png" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/ULDepth.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function bog_start() {
-            document.getElementById('uldepth_image').style.opacity = "1";
-          }
+    .thumb{position:relative; overflow:hidden; border-radius:var(--radius-sm); aspect-ratio: 16/10; background: #0f1319}
+    .thumb img, .thumb video{width:100%; height:100%; object-fit:cover; display:block}
+    .thumb::after{content:""; position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,.28), rgba(0,0,0,0)); opacity:.5; transition:opacity .25s ease}
+    .card:hover .thumb::after{opacity:.35}
 
-          function bog_stop() {
-            document.getElementById('uldepth_image').style.opacity = "0";
-          }
-          bog_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/abstract/document/11122640">
-          <span class="papertitle">ULDepth: Transform Self-supervised Depth Estimation to Unpaired Multi-domain Learning
-</span>
-        </a>
-        <br>
-        <a>Phan Thi Huyen Thanh*</a>, 
-        <a>Trung Thai Tran*</a>,
-				<strong>The Hiep Nguyen</strong>,
-        <a>Minh Huy Vu Nguyen</a>, 
-        <a>Tran Vu Pham</a>, 
-        <a>Truong Vinh Truong Duy</a>, 
-        <a>Duc Dung Nguyen</a>
-        <br>
-        <em>IEEE Open Journal of Signal Processing</em>, 2025
-        <br>
-        <p></p>
-        <p>
-          Propose a plug-in framework for unpaired multi-domain learning, enhancing self-supervised depth estimation with adversarial domain situations and dynamic normalization across diverse weather and lighting conditions.
+    .meta .title{font-weight:700; font-size:1.05rem; line-height:1.35}
+    .meta .where{color:var(--muted); margin:6px 0 10px; font-size:.95rem}
+    .meta .desc{margin:0; color:var(--text)}
+    .authors{margin:6px 0 0; color:var(--muted); font-size:.95rem}
+    .authors strong{color:var(--text)}
+    .badge{display:inline-block; padding:2px 8px; border-radius:999px; border:1px solid rgba(255,255,255,.15); margin-left:6px; font-size:.78rem; color:var(--muted)}
+
+    /* Footer */
+    footer{margin-top:36px; color:var(--muted); font-size:.9rem; text-align:right}
+
+    /* Subtle animation */
+    @keyframes pop { from{transform:translateY(6px); opacity:0} to{transform:none; opacity:1}}
+    .card{animation: pop .35s ease both}
+
+    /* Print */
+    @media print{ .links,.thumb::after,.ring{display:none !important} body{background:#fff} }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div>
+        <h1 class="name">The‑Hiep Nguyen</h1>
+        <p class="subtitle">Research Member @ <a href="https://ml4uhcmut.github.io/" target="_blank" rel="noopener noreferrer">AITechLab</a> · 3D Computer Vision & Generative Models</p>
+        <p class="lead">
+          I am advised by <a href="https://scholar.google.com/citations?user=xV7uHJgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Duc Dung Nguyen</a>.
+          I received my B.E. in Computer Science from Ho Chi Minh City University of Technology (HCMUT), Vietnam.
         </p>
-      </td>
-    </tr>
+        <nav class="links" aria-label="Profile links">
+          <a class="chip" href="mailto:hiepnguyena11387@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="m22 6-10 7L2 6"/></svg>
+            Email
+          </a>
+          <a class="chip" href="https://scholar.google.com/citations?user=ck0Ho1MAAAAJ&hl=vi" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="m9 21 3-9 3 9"/></svg>
+            Scholar
+          </a>
+          <a class="chip" href="https://github.com/hiepngth/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.41-1.35-1.79-1.35-1.79-1.1-.76.08-.74.08-.74 1.22.09 1.86 1.26 1.86 1.26 1.08 1.86 2.83 1.32 3.52 1.01.11-.78.42-1.31.76-1.61-2.67-.3-5.48-1.34-5.48-5.97 0-1.32.47-2.39 1.25-3.23-.12-.31-.54-1.56.12-3.26 0 0 1.02-.33 3.34 1.23a11.6 11.6 0 0 1 6.08 0c2.32-1.56 3.34-1.23 3.34-1.23.66 1.7.24 2.95.12 3.26.78.84 1.25 1.91 1.25 3.23 0 4.64-2.81 5.66-5.49 5.96.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+            GitHub
+          </a>
+        </nav>
+      </div>
+      <div class="avatar">
+        <span class="ring" aria-hidden="true"></span>
+        <img src="images/NguyenTheHiep.jpg" alt="Portrait of The‑Hiep Nguyen" />
+      </div>
+    </header>
 
+    <section class="section" id="research">
+      <h2>Research</h2>
+      <p>My research focuses on 3D computer vision: 3D reconstruction, monocular depth estimation, and multi‑task learning. I also explore domain adaptation across diverse visual domains and the use of generative models for visual content synthesis.</p>
+    </section>
 
-     
-         
-            <tr onmouseout="bog_stop()" onmouseover="bog_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='depthsegnet24_image'><video  width=100% muted autoplay loop>
-          <source src="images/DepthSegNet24.png" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/DepthSegNet24.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function bog_start() {
-            document.getElementById('depthsegnet24_image').style.opacity = "1";
-          }
+    <section class="section" id="publications" aria-label="Publications">
+      <h2>Publications</h2>
 
-          function bog_stop() {
-            document.getElementById('depthsegnet24_image').style.opacity = "0";
-          }
-          bog_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://openaccess.thecvf.com/content/ACCV2024/papers/Thanh_DepthSegNet24_A_Label-Free_Model_for_Robust_Day-Night_Depth_and_Semantics_ACCV_2024_paper.pdf">
-          <span class="papertitle">DepthSegNet24: A Label-Free Model for Robust Day-Night Depth and Semantics
-</span>
-        </a>
-        <br>
-        <a>Phan Thi Huyen Thanh*</a>, 
-				<strong>The Hiep Nguyen*</strong>,
-        <a>Minh Huy Vu Nguyen</a>, 
-        <a>Trung Thai Tran</a>,
-        <a>Tran Vu Pham</a>, 
-        <a>Duc Dung Nguyen</a>,
-        <a>Truong Vinh Truong Duy</a>, 
-        <a>Natori Naotake</a>
-        <br>
-        <em>Asian Conference on Computer Vision (ACCV)</em>, 2024
-        <br>
-        <p></p>
-        <p>
-          Introduce a label-free day–night model that unifies self-supervised depth estimation and knowledge distillation of semantic segmentation to achieve consistent all-day perception.
-        </p>
-      </td>
-    </tr>
+      <div class="pubs">
+        <!-- ULDepth -->
+        <article class="card">
+          <div class="thumb">
+            <img loading="lazy" src="images/ULDepth.png" alt="ULDepth teaser" />
+          </div>
+          <div class="meta">
+            <a class="title" href="https://ieeexplore.ieee.org/abstract/document/11122640" target="_blank" rel="noopener noreferrer">ULDepth: Transform Self‑supervised Depth Estimation to Unpaired Multi‑domain Learning</a>
+            <div class="authors">Phan Thi Huyen Thanh*; Trung Thai Tran*; <strong>The‑Hiep Nguyen</strong>; Minh Huy Vu Nguyen; Tran Vu Pham; Truong Vinh Truong Duy; Duc Dung Nguyen</div>
+            <div class="where"><em>IEEE Open Journal of Signal Processing</em>, 2025 <span class="badge">Depth • Domain Adaptation</span></div>
+            <p class="desc">Plug‑in framework for unpaired multi‑domain learning to enhance self‑supervised depth estimation via adversarial domain translation and dynamic normalization across diverse weather/lighting.</p>
+          </div>
+        </article>
 
-            <tr onmouseout="bog_stop()" onmouseover="bog_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='mldse_image'><video  width=100% muted autoplay loop>
-          <source src="images/MLDSE.png" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/MLDSE.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function bog_start() {
-            document.getElementById('mldse_image').style.opacity = "1";
-          }
+        <!-- DepthSegNet24 -->
+        <article class="card">
+          <div class="thumb">
+            <img loading="lazy" src="images/DepthSegNet24.png" alt="DepthSegNet24 teaser" />
+          </div>
+          <div class="meta">
+            <a class="title" href="https://openaccess.thecvf.com/content/ACCV2024/papers/Thanh_DepthSegNet24_A_Label-Free_Model_for_Robust_Day-Night_Depth_and_Semantics_ACCV_2024_paper.pdf" target="_blank" rel="noopener noreferrer">DepthSegNet24: A Label‑Free Model for Robust Day‑Night Depth and Semantics</a>
+            <div class="authors">Phan Thi Huyen Thanh*; <strong>The‑Hiep Nguyen*</strong>; Minh Huy Vu Nguyen; Trung Thai Tran; Tran Vu Pham; Duc Dung Nguyen; Truong Vinh Truong Duy; Natori Naotake</div>
+            <div class="where"><em>Asian Conference on Computer Vision (ACCV)</em>, 2024 <span class="badge">Label‑Free • Day‑Night</span></div>
+            <p class="desc">Unifies self‑supervised depth with distillation‑based semantics to achieve consistent all‑day perception without manual labels.</p>
+          </div>
+        </article>
 
-          function bog_stop() {
-            document.getElementById('mldse_image').style.opacity = "0";
-          }
-          bog_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/document/10471769/">
-          <span class="papertitle">MLDSE: Multi-task Learning for Depth and Segmentation Estimation
-</span>
-        </a>
-        <br>
-        <a>Nhat Huy Tran Hoang</a>, 
-				<strong>The Hiep Nguyen</strong>,
-        <a>Minh Huy Vu Nguyen</a>, 
-        <a>Trung Thai Tran</a>,
-        <a>Xuan Huy Le</a>, 
-        <a>Duc Dung Nguyen</a>
-        <br>
-        <em>RIVF International Conference on Computing and Communication Technologies</em>, 2023
-        <br>
-        <p></p>
-        <p>
-          Utilize cross-task feature propagation and multi-scale supervision through a single encoder–decoder framework to optimize depth and segmentation tasks.
-        </p>
-      </td>
-    </tr>
+        <!-- MLDSE -->
+        <article class="card">
+          <div class="thumb">
+            <img loading="lazy" src="images/MLDSE.png" alt="MLDSE teaser" />
+          </div>
+          <div class="meta">
+            <a class="title" href="https://ieeexplore.ieee.org/document/10471769/" target="_blank" rel="noopener noreferrer">MLDSE: Multi‑task Learning for Depth and Segmentation Estimation</a>
+            <div class="authors">Nhat Huy Tran Hoang; <strong>The‑Hiep Nguyen</strong>; Minh Huy Vu Nguyen; Trung Thai Tran; Xuan Huy Le; Duc Dung Nguyen</div>
+            <div class="where"><em>RIVF International Conference on Computing and Communication Technologies</em>, 2023 <span class="badge">Multi‑Task</span></div>
+            <p class="desc">Cross‑task feature propagation with multi‑scale supervision in a single encoder‑decoder to optimize depth and segmentation jointly.</p>
+          </div>
+        </article>
 
+        <!-- MonoVINI -->
+        <article class="card">
+          <div class="thumb">
+            <img loading="lazy" src="images/MonoVINI.png" alt="MonoVINI teaser" />
+          </div>
+          <div class="meta">
+            <a class="title" href="https://ieeexplore.ieee.org/document/10471862" target="_blank" rel="noopener noreferrer">MonoVINI: Seeing in the Dark with Virtual‑World Supervision</a>
+            <div class="authors">Minh Huy Vu Nguyen; Trung Thai Tran; <strong>The‑Hiep Nguyen</strong>; Duc Dung Nguyen</div>
+            <div class="where"><em>RIVF International Conference on Computing and Communication Technologies</em>, 2023 <span class="badge">Nighttime • Simulation</span></div>
+            <p class="desc">Combines realistic simulation with adversarial domain adaptation to tackle challenges of nighttime perception.</p>
+          </div>
+        </article>
 
+        <!-- DarkMDE -->
+        <article class="card">
+          <div class="thumb">
+            <img loading="lazy" src="images/DarkMDE.png" alt="DarkMDE teaser" />
+          </div>
+          <div class="meta">
+            <a class="title" href="https://link.springer.com/chapter/10.1007/978-3-031-46573-4_39" target="_blank" rel="noopener noreferrer">DarkMDE: Excavating Synthetic Images for Nighttime Depth Estimation Using Cross‑Domain Supervision</a>
+            <div class="authors">Trung Thai Tran; Xuan Huy Le; Minh Huy Vu Nguyen; <strong>The‑Hiep Nguyen</strong>; Nhat Huy Tran Hoang; Duc Dung Nguyen</div>
+            <div class="where"><em>International Conference on Intelligence of Things (ICIT)</em>, 2023 <span class="badge">GAN • Nighttime</span></div>
+            <p class="desc">A GAN‑based framework leveraging paired synthetic night and real day images to enforce depth consistency and improve robustness at night.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-                <tr onmouseout="bog_stop()" onmouseover="bog_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='monovini_image'><video  width=100% muted autoplay loop>
-          <source src="images/MonoVINI.png" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/MonoVINI.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function bog_start() {
-            document.getElementById('monovini_image').style.opacity = "1";
-          }
+    <footer>
+      <p>This site uses a simplified, single‑file version inspired by <a href="https://github.com/jonbarron/jonbarron_website" target="_blank" rel="noopener noreferrer">jonbarron_website</a>.</p>
+    </footer>
+  </main>
 
-          function bog_stop() {
-            document.getElementById('monovini_image').style.opacity = "0";
-          }
-          bog_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/document/10471862">
-          <span class="papertitle">MonoVINI: Seeing in the Dark with Virtual-World Supervision
-</span>
-        </a>
-        <br>
-        <a>Minh Huy Vu Nguyen</a>, 
-        <a>Trung Thai Tran</a>,
-				<strong>The Hiep Nguyen</strong>,
-        <a>Duc Dung Nguyen</a>
-        <br>
-        <em>RIVF International Conference on Computing and Communication Technologies</em>, 2023
-        <br>
-        <p></p>
-        <p>
-          Introduce virtual-world supervision, combining realistic simulation data with adversarial domain adaptation to tackle the challenges of nighttime condition.
-        </p>
-      </td>
-    </tr>
-    
-
-                <tr onmouseout="bog_stop()" onmouseover="bog_start()">
-      <td style="padding:16px;width:20%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='darkmde_image'><video  width=100% muted autoplay loop>
-          <source src="images/DarkMDE.png" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/DarkMDE.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function bog_start() {
-            document.getElementById('darkmde_image').style.opacity = "1";
-          }
-
-          function bog_stop() {
-            document.getElementById('darkmde_image').style.opacity = "0";
-          }
-          bog_stop()
-        </script>
-      </td>
-      <td style="padding:8px;width:80%;vertical-align:middle">
-        <a href="https://link.springer.com/chapter/10.1007/978-3-031-46573-4_39">
-          <span class="papertitle">DarkMDE: Excavating Synthetic Images for Nighttime Depth Estimation Using Cross-Domain Supervision
-</span>
-        </a>
-        <br>
-        <a>Trung Thai Tran</a>,
-        <a>Xuan Huy Le</a>, 
-        <a>Minh Huy Vu Nguyen</a>, 
-				<strong>The Hiep Nguyen</strong>,
-        <a>Nhat Huy Tran Hoang</a>, 
-        <a>Duc Dung Nguyen</a>
-        <br>
-        <em>International Conference on Intelligence of Things (ICIT)</em>, 2023
-        <br>
-        <p></p>
-        <p>
-          Propose a GAN-based framework that uses paired synthetic night and real day images to enforce depth consistency and improve robustness in nighttime scenes.
-        </p>
-      </td>
-    </tr>
-    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=LpG_BuCGFN62JpZMTlUlUwBjGv0e9MsKZOdb5dCOwMg"></script>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  This template is borrowed from <a href="https://github.com/jonbarron/jonbarron_website">jonbarron_website</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+  <script id="clstr_globe" src="//clustrmaps.com/globe.js?d=LpG_BuCGFN62JpZMTlUlUwBjGv0e9MsKZOdb5dCOwMg" async></script>
+</body>
 </html>
